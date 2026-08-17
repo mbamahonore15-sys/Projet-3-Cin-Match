@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinéMatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container">
+        <div class="logo">CinéMatch</div>
+        <form id="search-input">
+            <input type="text" placeholder="Taper le nom de votre films ou match...">
+        </form>
+        <button>Favorite</button>
+    </header>
+    <main>
+        <h2>Films Populaire du Moment</h2>
+        <section id="container-grid">
+            <div class="grid"></div>
+        </section>
+        <div id="loader">Chargement...</div>
+        <div id="modal">Modale</div>
+
+       
+        <div id="overlay" class="overlay"></div>
+
+<!-- Panneau latéral des favoris (Off-canvas) -->
+        <aside id="favorites-drawer" class="drawer">
+            <div class="drawer-header">
+                <h2>Mes Favoris</h2>
+                <button id="close-drawer" class="close-btn">&times;</button>
+            </div>
+  
+        <div id="favorites-list" class="drawer-content"> </div>
+        </aside>
+    </main>
+
+ <script src="script.js"></script>   
+</body>
+</html>
